@@ -41,6 +41,18 @@ function bigoven(opts) {
 		   qs: qs,
 		   headers: {'Content-Type': 'application/json'}},
 		  cb);
+    },
+    recipe: function(recipeId, cb) {
+      var resourcePointer = "recipe/" + recipeId;
+      console.log("RP**" + resourcePointer);
+      var url = apiURL(resourcePointer);
+      var qs = addAPIKey({});
+      console.log("URL: " + url);
+      console.log(qs);
+      request.get({url: url,
+		   qs: qs,
+		   headers: {'Content-Type': 'application/json'}},
+		  cb);
     }
   }
 }
