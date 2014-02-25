@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var _ = require('underscore');
 
-var opts = {apiKey:"dvxKRNiPh1WPzXNKxZ58mwT27n98h1kh"};
+var opts = {apiKey:""};
 var bigOvenAPI = require('../bigoven.js')(opts);
 
 describe('bigoven()', function () {
